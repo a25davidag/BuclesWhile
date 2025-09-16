@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -17,19 +18,21 @@ public class Main {
         }
 
         // Ejercicio 6
-
-
-        System.out.println("Ingresa un numero");
-        int n2 = sc.nextInt();
-        int secreto = 20;
-        while (n2 == secreto) {
-            if (n2 == secreto) {
-                System.out.println("El numero es correcto");
-            }else if (n2 != secreto){
-                System.out.println("El numero no es correcto");
+        Random random = new Random();
+        int n2 = 56;
+        int intentos = 0;
+        System.out.println("Adivina un numero del 1-100");
+        while (intentos != n2) {
+            System.out.println("Introduce numero:");
+            intentos = sc.nextInt();
+            if (intentos < n2) {
+                System.out.println("Numero bajo intentalo de nuevo");
+            }else if (intentos > n2){
+                System.out.println("Numero alto intentalo de nuevo");
+            }else {
+                System.out.println("Bien");
             }
-            n2++;
-            sc.close();
+        }
         }
     }
-    }
+
