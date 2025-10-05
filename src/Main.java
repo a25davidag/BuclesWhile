@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // Ejercicio 5
+        // Ejercicio 5 Números pares (while): Ingresa un número N y muestra los números pares desde 1 hasta N
         System.out.println("Ingresa un numero");
         int n1 = sc.nextInt();
         int i = 1;
@@ -17,7 +17,8 @@ public class Main {
             i++;
         }
 
-        // Ejercicio 6
+        // Ejercicio 6 Adivinar número (while): Ingresa un número secreto y deja que el usuario adivine hasta
+        //acertar.
         Random random = new Random();
         int n2 = 56;
         int intentos = 0;
@@ -35,7 +36,8 @@ public class Main {
         }
 
 
-        //Ejercicio7
+        //Ejercicio7 Menú repetitivo (do-while): Muestra un menú simple con opciones hasta que el usuario elija
+        //salir
         Scanner st = new Scanner(System.in);
         int opcion;
 
@@ -67,7 +69,7 @@ public class Main {
 
         } while (opcion != 0);
 
-        //Ejercicio 8
+        //Ejercicio 8 Suma hasta cero (do-while): Ingresa números y súmalos hasta que se ingrese un cero.
         Scanner sc = new Scanner(System.in);
         int numero, suma = 0;
 
@@ -81,7 +83,7 @@ public class Main {
         System.out.println("La suma total es: " + suma);
 
 
-        //Ejercicio 9
+        //Ejercicio 9 Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.
         Scanner sj = new Scanner(System.in);
         System.out.println("Validacion de contraseña");
         System.out.println("Introduzca una contraseña");
